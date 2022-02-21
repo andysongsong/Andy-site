@@ -122,15 +122,15 @@
   color: rgba(247, 131, 54, 0.808);
   background: none;
 }
-
-/* about section styling */
+/* general content styling */
 section {
   padding: 100px 0;
 }
-.about {
-  font-family: "Ubuntu", sans-serif;
+.about,
+.projects {
+  font-family: "Poppins", sans-serif;
 }
-.about .title {
+section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -139,7 +139,7 @@ section {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
-.about .title::before {
+section .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -149,8 +149,7 @@ section {
   background: #111;
   transform: translateX(-50%);
 }
-.about .title::after {
-  content: "who i am";
+section .title::after {
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -160,7 +159,14 @@ section {
   background: #fff;
   transform: translateX(-50%);
 }
-.about .about-content {
+/* general content styling */
+/* about section styling */
+
+.about .title::after {
+  content: "who i am";
+}
+.about .about-content,
+.projects .project-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -210,6 +216,36 @@ section {
 }
 
 /* about section styling */
+
+/* projects section styling */
+.projects {
+  color: rgba(248, 234, 223, 0.808);
+  background: rgb(58, 134, 134);
+}
+.projects .title::before {
+  background: black;
+}
+.projects .title::after {
+  background: rgb(58, 134, 134);
+  content: "what i have done";
+}
+.projects .project-content .card {
+  width: calc(33%);
+  background: rgb(194, 185, 64);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+}
+.projects .project-content .card i {
+  font-size: 50px;
+  color: red;
+}
+.projects .project-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+/* projects section styling */
 
 /* responsive media display */
 @media (max-width: 1100px) {
