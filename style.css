@@ -446,7 +446,7 @@ section .title::after {
 
 /* skills section styling */
 .skills .title::after {
-  content: "waht i know";
+  content: "what i know";
 }
 .skills .carousel .card {
   background: #f3f4ed;
